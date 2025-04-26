@@ -1,0 +1,117 @@
+/*Aplicou estilos basicos ao corpo da pagina*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif ;/*define a fonte padrão*/
+    background: linear-gradient (to bottom, #fdfbf2 ,
+    #bba6a6);/*degrade como "plano de fundo" da pag*/
+    color: #0e0f0f;/*define a cor do texto*/
+    line-height: 1.6;/*define o espaçamento entre as linhas*/
+    padding: 20px;/*Espaçamento interno nas bordas*/
+}
+/*Estilos do titulo principal da pagina*/
+h1{
+    text-align: center;/*Centralização do texto*/
+    color: #ff6f61;/*Aplicar cor laranja*/
+    font-size: 3rem;/*Altera o tamanho*/
+    margin-bottom: 30px;/*Espaço abaixo do titulo*/
+}
+h3,h4{
+    color: #00796b;/*Cor da letra/fonte*/
+    margin-top: 20px;/*Espaço superior entre as seções*/
+}
+/*Estilo para todas as imagens*/
+img{
+    width: 100%;/*Ocupa 100% da largura do elemento em que ela esta*/
+    max-width: 600px;/*Limite de largura*/
+    height: auto;/*ele vai manter a proporção*/
+    border-radius: 12px;/*Bordas arredondadas*/
+    margin: 10px 0px;/*Espaçamento acima e abaixo entre a img e o conteudo.*/
+}
+/*estilizando os links*/
+a{
+    color: #dd6e4d;
+    text-decoration: none;/*Remove o traçado do link*/
+}
+/*Evento hover nos links*/
+a:hover{
+    text-decoration: underline;/*Add um traço abaixo do link quando o mouse estiver sobre ele*/
+}
+/*Estilizar todas as listas (ol, li) cor de fundo, espaço interno, bordas arredondadas*/
+li{
+    color: rgba(158, 35, 13, 0.904);
+    margin-top: 10px;
+    padding:5px;
+    background-color: rgba(178, 217, 219, 0.904);
+    border-radius: 10px; ;
+}
+ol{
+    background-color: rgba(178, 217, 219, 0.904);
+    border-radius: 10px;/*Arredondamento das bordas*/
+    padding: 30px;/*Espaçamento interno*/
+}
+/*Estilo da tabela*/
+table{
+    width: 100%;/*Ocupa 100% da largura do elemento ao qual ela esta inserida*/
+border-collapse: collapse;/*Juntar as bordas da tabela*/
+margin-top: 20px;/*Espaço acima da tabela*/
+}
+table td{
+ border: 1px solid #ddd;/*Borda de 1px de largura, linha continua e cor cinza*/
+ /*espaçamento interno, alinhar o texto no centro e atribuir uma cor de fundo*/
+padding:20px;
+text-align: center;
+background-color: #5a5ea7;
+}
+/*Estilizando os cards*/
+.card{
+    background-color:rgba(178, 217, 219, 0.904);
+    border-radius: 15px;/*arredondando as bordas*/
+    margin: 20px auto;/*Espaçamento*/
+    overflow: hidden;/*Ocultar o que passar dos limites do card*/
+    display: inline-block;/*Coloca os cards lado a lado*/
+   vertical-align: top;/*Alinha os cards pelo topo*/
+    height: 450px;/*Define a altura para os cards*/
+}
+.card:hover{
+ transform: scale(1.03);/*Aumento em 3% o tamanho do card*/
+}
+/*Estilizar os titulos dos cards*/
+.card-title{
+    font-size: 1rem;/*Modificando o tamanho*/
+    color: #00695c;/*Atribuindo nova cor*/
+    margin-bottom: 10px;/*Espaço abaixo do titulo*/
+   text-align: center;
+}
+/*Estilizar o paragrafo*/
+.card-text{
+    margin-left: 10px;
+    color: #444;
+}
+.card-body{
+    font-size: 0.85rem;
+}
+/*Ajustando a imagem*/
+.card-img-top{
+    width: 50%;
+    height: 40%;
+}
+.btn-primary{
+    background-color: #009688;/*cor de fundo*/
+    color: white;/*cor da letra*/
+    padding: 10px 16px;/*espaço interno na horizontal e vertical*/
+    border-radius: 10px;/*arrendondar as bordas*/
+    text-align:center;/*centralizar o texto*/
+    margin-left: 10px;/*espaço externo entre as bordas do botão e o limite do card*/
+    overflow: hidden;
+}
+.btn-primary{
+    background-color: #003cff;
+    text-decoration: none;/*Retirando o traçado do link*/
+}
+/*Responsividade*/
+/*telas pequenas*/
+@media(max-width:768px){
+    .card{
+        width: 90%;
+        margin:20px auto;
+    }
+}
